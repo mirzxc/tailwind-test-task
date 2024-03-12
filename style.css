@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: 'metropolisregular';
+    src: url('assets/fonts/Metropolis-Regular.otf');
+    src: asset-url('assets/fonts/Metropolis-Regular.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'metropolisbold';
+    src: url('assets/fonts/Metropolis-Bold.otf');
+    src: asset-url('assets/fonts/Metropolis-Bold.otf') format("opentype");
+    font-weight: bold;
+  }
+
+@font-face {
+    font-family: 'metropolisblack';
+    src: url('assets/fonts/Metropolis-Black.otf');
+    src: asset-url('assets/fonts/Metropolis-Black.otf') format("opentype");
+    font-weight: 900;
+  }
+
+@font-face {
+    font-family: 'metropolisextrabold';
+    src: url('assets/fonts/Metropolis-ExtraBold.otf');
+    src: asset-url('assets/fonts/Metropolis-ExtraBold.otf') format("opentype");
+    font-weight: 900;
+  }
+
+h3 {
+    font-family: metropolisbold;
+}
+
+h4 {
+    font-family: metropolisbold;
+}
+
+p {
+    font-family: metropolisregular;
+}
+
+.modal.shown {
+display: flex;
+animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
